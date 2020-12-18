@@ -31,8 +31,44 @@ body
 {
     color: #fff !important;
     font-weight: 600;
+    float:right;
+    text-align: left;
+}
+.navbar-toggler
+{
+    outline:none !important;
+}
+#banner
+{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding :0 !important;
+    height: 500px;
+    
+}
+#banner p
+{
+    color: #ffffff;
 }
 
+#banner a img
+{
+    height: 50px;
+    width: 50px;
+}
+.navbar-toggler i
+{
+    color: #fff;
+    font-size: 25px !important;
+}
+
+/* h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+} */
 
 /*--------Footer Section---------*/
 #footer{
