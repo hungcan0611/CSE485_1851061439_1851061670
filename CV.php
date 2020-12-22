@@ -14,7 +14,6 @@ include("NavBarSection.php");
       </div>
     </div>
 </section>
-
 <?php
 include("footer.php");
 ?>
