@@ -1,6 +1,6 @@
-#banner
+/* #banner
 {
-    background-image: linear-gradient(to left,#a517ba,#5f1782);
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
     color: #ffffff;
     padding-top: 5%;
 }
@@ -23,8 +23,11 @@
 }
 .bottom-img
 {
-    width: 30%;
-    height: 40px;
-    size: 40px;
+    width: 100%;
 
 }
+
+.Tung-img{
+    margin-top: 25px;
+    align-items: center;
+} */
