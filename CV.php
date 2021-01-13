@@ -69,12 +69,42 @@ include("NavBarSection.php");
   <div class="container">
     <h1 class="title text-center">What Clients say</h1>
       <div class="row">
-        <div class="col-md-5 testimonials">
+        <div class="col-md-4 testimonials">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
+          <img src="Images/Tung.jpg">
+          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+        </div>
+        <div class="col-md-4 testimonials">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
+          <img src="Images/Tung.jpg">
+          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+        </div>
+        <div class="col-md-4 testimonials">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
           <img src="Images/Tung.jpg">
           <p><b>Tùng</b><br>Pr0pl4y3r</p>
         </div>
       </div>
+  </div>
+</section>
+
+<section id="social-media">
+  <div class="container text-center">
+    <h3>FIND US ON SOCIAL MEDIA</h3>
+    <div class="row">
+    <div class="col-md-3 social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="col-md-3 social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="col-md-3 social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="col-md-3 social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div> 
+    </div>
   </div>
 </section>
 <?php

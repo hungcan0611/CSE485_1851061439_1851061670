@@ -218,6 +218,25 @@ body
     margin: 0 10px;
 }
 
+/* ------------------- Social Media ------------------- */
+#social-media{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media h3{
+    font-size:36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons{
+    font-size: 50px;
+    transition: 0.5s;
+    background-color: linear-gradient(to right, #a517ba, #5f1782);
+}
+.social-icons a:hover i{
+    transform: translateY(-10px);
+}
+
 /* ------------------- Admin ------------------- */
 #admin body{
     margin: 0;
