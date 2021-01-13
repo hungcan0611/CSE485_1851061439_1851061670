@@ -315,6 +315,7 @@ body
 }
 .sidebar a:hover{
     background: #a517ba;
+    color: #fff;
 }
 .sidebar i{
     padding-right: 10px;
