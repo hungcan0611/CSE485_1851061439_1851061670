@@ -217,6 +217,9 @@ body
     border-radius: 50%;
     margin: 0 10px;
 }
+.title{
+    margin-top: 100px;
+}
 
 /* ------------------- Social Media ------------------- */
 #social-media{
@@ -375,4 +378,58 @@ label #sidebar_btn:hover{
     .content{
         margin-left: 60px;
     }
+}
+/* ------------------- Login ------------------- */
+#login{
+    background: linear-gradient(to right, #a517ba, #5f1782);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#login *{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#login form{
+    width: 500px;
+    border: 2px solid #cccccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+#login h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#login input{
+    display: block;
+    border: 2px solid #cccccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+}
+#login label{
+    font-size: 18px;
+    padding: 10px;
+}
+#login button{
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+#login button:hover{
+    opacity: .7;
+}
+#login .error{
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
 }
