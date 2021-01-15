@@ -25,5 +25,30 @@
     </div>
   </div>
 </section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+  });
+</script>
+<script>
+  $("#showMore_btn").click(function(){
+    $("#services .services:hidden").slice(0,3).slideDown();
+    if($("#services .services:hidden").length == 0){
+      $("#showMore_btn").fadeOut("slow");
+    }
+  })
+</script>
 </body>
 </html>

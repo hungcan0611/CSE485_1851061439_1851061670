@@ -156,6 +156,22 @@ body
 .services{
     padding: 20px;
 }
+.btn-center button{
+    padding: 15px;
+    margin: 30px 0;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.services button:hover{
+    transition: all 0.5s ease;
+    border: 1px solid linear-gradient(to right, #a517ba, #5f1782);
+    box-shadow: 0 0 15px 5px rgba();
+}
+#services .services:nth-child(n+4){
+    display: none;
+}
 .services h4{
     padding: 5px;
     margin-top: 25px;
@@ -203,23 +219,92 @@ body
 
 
 /* ------------------- Testimonials ------------------- */
-#testimonials{
-    margin: 100px 0;
+#testimonials *{
+    margin: 30px 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+#testimonials body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .testimonials{
-    border-left: 4px solid #7b1798;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    position: relative;
+    max-width: 100%;
 }
-.testimonials img{
-    height: 60px;
-    width: 60px;
+#testimonials .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    min-height: 350px;
+    background: #fff;
+    margin: 0 20px;
+}
+#testimonials .swiper-container-3d .swiper-slide-shadow-left,
+#testimonials .swiper-container-3d .swiper-slide-shadow-right{
+    background: none;
+}
+.testimonials .card{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+    background: #f8f9fa;
+    border: none;
+}
+.testimonials .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #a517ba, #5f1782);
+    z-index: 1;
+    transition: 0.5s;
+}
+.testimonials .card:hover .layer,
+.testimonials .card:hover .content p,
+.testimonials .card:hover .content p br{
+    top: -30px;
+    color: #fff;
+}
+.testimonials .card .content{
+    background: #f8f9fa;
+    
+    
+}
+.testimonials .card .content p{
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #000;
+    transition: 0.5s;
+    
+}
+.testimonials .card .content img{
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto 10px;
+    overflow: hidden;
     border-radius: 50%;
-    margin: 0 10px;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.title{
-    margin-top: 100px;
+.testimonials .card .content p br{
+    color: white;
+    font-size: 14px;
+    transition: 0.5s;
 }
+
 
 /* ------------------- Social Media ------------------- */
 #social-media{
