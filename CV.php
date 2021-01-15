@@ -1,4 +1,5 @@
 <?php
+include("Admin/config.php");
 include("header.php");
 include("NavBarSection.php");
 ?>
@@ -19,16 +20,27 @@ include("NavBarSection.php");
     <img src="Images/wavy-alt-footer.png" class ="bottom-img">
 </section>
 
+<?php 
+  $result = mysqli_query($conn, "SELECT * FROM services");
+  if(mysqli_num_rows($result)>0){
+    $serv = mysqli_fetch_all($result);
+  }
+?>
 <section id="services">
     <div class="container text-center">
       <h1 class="title">WHAT WE DO ?</h1>
         <div class="row text-center">
+        <?php foreach ($serv as $i){ ?>
             <div class="col-md-4 services">
-              <img src="Images/GI.gif" class="services-img">
-              <h4>Growth Marketing</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque labore iure sed tenetur aperiam voluptatem sunt, numquam ratione fugiat obcaecati aliquam adipisci non vel cum dolor cupiditate molestias explicabo.</p>
+              <img src="<?php echo ($i[3]) ?>" class="services-img">
+              
+              <h4><?php echo ($i[1]) ?></h4>
+              
+              <p><?php echo ($i[2])?></p>
+              
             </div>
-              <div class="col-md-4 services">
+            <?php } ?>
+              <!-- <div class="col-md-4 services">
                 <img src="Images/GI.gif" class="services-img">
                 <h4>Online Branding</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque labore iure sed tenetur aperiam voluptatem sunt, numquam ratione fugiat obcaecati aliquam adipisci non vel cum dolor cupiditate molestias explicabo.</p>
@@ -38,12 +50,18 @@ include("NavBarSection.php");
                 <img src="Images/GI.gif" class="services-img">
                 <h4>Animated Ads</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque labore iure sed tenetur aperiam voluptatem sunt, numquam ratione fugiat obcaecati aliquam adipisci non vel cum dolor cupiditate molestias explicabo.</p>
-                
-              </div>
+              </div> -->
         </div>
     </div>
 </section>
 
+
+<?php 
+  $about_us = mysqli_query($conn, "SELECT * FROM about_us");
+  if(mysqli_num_rows($about_us)>0){
+    $au = mysqli_fetch_all($about_us);
+  }
+?>
 <section id="about-us">
   <div class="container">
     <h1 class="title text-center">Why choose us?</h1>
@@ -51,10 +69,9 @@ include("NavBarSection.php");
         <div class="col-md-6 about-us">
         <p class="about-title">Why we're different</p>
           <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia reiciendis doloremque reprehenderit repudiandae distinctio asperiores, optio, obcaecati aperiam ratione assumenda qui, odio eius quo animi nisi sit nobis? Reiciendis?</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia reiciendis doloremque reprehenderit repudiandae distinctio asperiores, optio, obcaecati aperiam ratione assumenda qui, odio eius quo animi nisi sit nobis? Reiciendis?</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia reiciendis doloremque reprehenderit repudiandae distinctio asperiores, optio, obcaecati aperiam ratione assumenda qui, odio eius quo animi nisi sit nobis? Reiciendis?</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia reiciendis doloremque reprehenderit repudiandae distinctio asperiores, optio, obcaecati aperiam ratione assumenda qui, odio eius quo animi nisi sit nobis? Reiciendis?</li>
+          <?php foreach($au as $i){?>
+            <li><?php echo $i[1]?></li>
+            <?php } ?>
           </ul>
         </div>
         <div class="col-md-6">
@@ -65,25 +82,23 @@ include("NavBarSection.php");
 </section>
 
 
+<?php 
+  $testimonials = mysqli_query($conn, "SELECT * FROM testimonials");
+  if(mysqli_num_rows($testimonials)>0){
+    $comment = mysqli_fetch_all($testimonials);
+  }
+?>
 <section id="testimonals">
   <div class="container">
     <h1 class="title text-center">What Clients say</h1>
       <div class="row">
+      <?php foreach($comment as $i){?>
         <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="Images/Tung.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+          <p><?php echo $i[3]?></p>
+          <img src="<?php echo $i[4] ?>">
+          <p><b><?php echo $i[1] ?></b><br><?php echo $i[2] ?></p>
         </div>
-        <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="Images/Tung.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
-        </div>
-        <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="Images/Tung.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
-        </div>
+        <?php } ?>
       </div>
   </div>
 </section>
