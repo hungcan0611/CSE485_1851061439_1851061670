@@ -14,8 +14,11 @@
         header("location: home.php");
     }
 ?>
-<div class="container">
     <form method = "POST">
+        
+    </form>
+<div class="container">
+    <form method="POST">
         <div class="form-group">
             <label>Name of Service</label>
             <input type="text" class="form-control" name="name" >
@@ -26,7 +29,7 @@
         </div>
         <div class="form-group">
             <label>Image</label>
-            <input type="text" class="form-control" name="img" >
+            <input type="file" id="avatar" name="img">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" name = "submit">Add</button>
@@ -34,5 +37,5 @@
     </form>
 </div>
 <?php
-    include("footer.php");
+    include("sidebar_footer.php");
 ?>

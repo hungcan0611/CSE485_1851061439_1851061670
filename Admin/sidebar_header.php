@@ -2,32 +2,53 @@
     include("header.php");
 ?>
     <section id="admin">
-        <input type="checkbox" id="check">
-        <header>
-            <label for="check">
-                <i class="fas fa-bars" id="sidebar_btn"></i>
-            </label>
-            <div class="left-area">
-                <h3>Ad<span>min</span></h3>
+        <div class="wrapper">
+            <input type="checkbox" id="check">
+            <div class="header">
+                <div class="header-menu">
+                    <div class="title-admin">Ad<span>min</span></div>
+                    <!--<div class="sidebar-btn" id="sidebar-check" for="check">
+                        <i class="fas fa-bars"></i>
+                    </div>-->
+                    <label for="check" class="sidebar-btn">
+                        <i class="fas fa-bars" id="sidebar-btn"></i>
+                    </label>
+                    <ul>
+                        <li><a href="logout.php"><i class="fas fa-power-off"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="right-area">
-                <a href="logout.php" class="logout_btn">Logout</a>
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <center class="profile">
+                        <img src="../Images/GI.gif" alt="">
+                        <p>Admin</p>
+                    </center>
+                    <li class="item" id="profile">
+                        <a href="#profile" class="menu-btn">
+                            <i class="fas fa-concierge-bell"></i><span>Services<i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="services.php"><i class="fas fa-folder-plus"></i><span>Add</span></a>
+                            <a href="#"><i class="fas fa-list"></i><span>List</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="message">
+                        <a href="#message" class="menu-btn">
+                            <i class="fas fa-concierge-bell"></i><span>Services<i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="services.php"><i class="fas fa-folder-plus"></i><span>Add</span></a>
+                            <a href="#"><i class="fas fa-edit"></i><span>Edit</span></a>
+                            <a href="#"><i class="fas fa-folder-minus"></i><span>Delete</span></a>
+                        </div>
+                    </li>
+                
+                </div>
             </div>
-        </header>
-        <div class="sidebar">
-            <center>
-                <img src="../Images/GI.gif" class="admin_image" alt="">
-                <h4>Admin</h4>
-            </center>
-            <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-            <a href="#"><i class="fas fa-cog"></i><span>Components</span></a>
-            <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
-            <a href="services.php"><i class="fas fa-th"></i><span>Add service</span></a>
-            <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-            <a href="#"><i class="fas fa-sliders-h"></i><span>Setting</span></a>
-        </div>
-        <div class="content">
-        
+            <div class="main-container">
+            
+            
         
             
         
