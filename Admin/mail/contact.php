@@ -1,12 +1,11 @@
 <?php
 require_once("class.phpmailer.php");
 require_once("class.smtp.php");
-include("config.php");
-include("header.php");
+include("../config.php");
+include("../header.php");
 
 if(isset($_GET['submit'])){
     $email = $_GET['email'];
-    echo("Thanh cong");
 } 
     $mail=new PHPMailer();
     echo $email;
@@ -31,5 +30,5 @@ $mail->SMTPDebug = 3;
  }  
 
 
-include("footer.php");
+include("../footer.php");
 ?>  

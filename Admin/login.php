@@ -25,7 +25,7 @@
                 $row = mysqli_fetch_assoc($result);
                 if($row['username'] == $user && $row['password'] == $pass){
                     $_SESSION['username'] = $row['username'];
-                    header("location: home.php");
+                    header('location: home/index.php');
                     exit();
                 }else{
                     header("location: index.php?error=Incorrect username or password");
