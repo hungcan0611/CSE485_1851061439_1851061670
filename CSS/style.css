@@ -39,7 +39,7 @@ body
     outline:none !important;
 }
 
-/* Banner section */
+/*--------- Banner section ----------*/
 #banner
 {
     background-image: linear-gradient(to right,#a517ba,#5f1782);
@@ -97,16 +97,15 @@ body
 
 .footer-img{
     transform: rotate(180deg);
-    color: linear-gradient(to right, #a517ba, #5f1782);
 }
 
 #footer .container{
-    background-color: linear-gradient(to right, #a517ba, #5f1782); 
+
     min-height: 50vh;
 }
 
 .footer-img{
-    width: 100%;
+    width: 101%;
 }
 
 .footer-box{
@@ -217,7 +216,6 @@ body
     margin-left: 20px;
 }
 
-
 /* ------------------- Testimonials ------------------- */
 #testimonials *{
     margin: 30px 0;
@@ -307,7 +305,7 @@ body
 
 
 /* ------------------- Social Media ------------------- */
-#social-media{
+/*#social-media{
     background: #f8f9fa;
     padding: 100px 0;
 }
@@ -323,7 +321,143 @@ body
 }
 .social-icons a:hover i{
     transform: translateY(-10px);
+}*/
+
+/* ------------------- Team ------------------- */
+#team *{
+    box-sizing: border-box;
 }
+
+#team html{
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+#team a{
+    text-decoration: none;
+    color: #000;
+}
+#team{
+    padding: 10rem 0;
+    background-color: #f8f9fa;;
+}
+#team .card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+#team .card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+#team .profile-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: 5px;
+    z-index: 1;
+    border: 5px solid #a517ba;
+}
+#team .card h1{
+    font-size: 2rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+#team .card .job-title{
+    color: #777;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#team .card .about{
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+#team .card .btn{
+    padding: .4rem 2.5rem;
+    background-color: #a517ba;
+    border-radius: 2rem;
+    border: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.1rem;
+    transition: all .5s;
+}
+#team .card .btn:hover{
+    transform: translateY(-3px);
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, .2);
+}
+#team .card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+#team .card .social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+#team .card .social-media i{
+    font-size: 1.5rem;
+    transition: color .5s;
+}
+#team .card .social-media .fa-facebook-square{
+    color: #3b5999;
+}
+#team .card .social-media .fa-instagram{
+    color: #e6683c;
+}
+#team .card .social-media .fa-google-plus-square{
+    color: #dd4b39;
+}
+#team .card .social-media .fa-facebook-square:hover,
+#team .card .social-media .fa-instagram:hover,
+#team .card .social-media .fa-google-plus-square:hover{
+    color: #45e19f;
+}
+@media screen and (min-width: 700px){
+    #team .card-wrapper{
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+        align-items: center;
+    }
+    #team .card{
+        margin: 2rem;
+        transition: opacity .5s;
+    }
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }to{
+            opacity: 1;
+        }
+    }
+    #team .card:nth-child(1){
+        animation: fadeIn .5s .5s backwards;
+    }
+    #team .card:nth-child(2){
+        animation: fadeIn .5s 1s backwards;
+    }
+    #team .card:hover{
+        transform: scale(1.05);
+    }
+}
+
+
 
 /* ------------------- Admin ------------------- */
 #admin body{

@@ -111,7 +111,7 @@ include("NavBarSection.php");
   </div>
 </section>
 
-<section id="social-media">
+<!--<section id="social-media">
   <div class="container text-center">
     <h3>FIND US ON SOCIAL MEDIA</h3>
     <div class="row">
@@ -127,6 +127,42 @@ include("NavBarSection.php");
     <div class="col-md-3 social-icons">
       <a href="#"><i class="fab fa-whatsapp"></i></a>
     </div> 
+    </div>
+  </div>
+</section>-->
+
+<section id="team">
+  <div class="container">
+    <h1 class="title text-center">Meet The Team</h1>
+    <div class="card-wrapper">
+        <div class="card">
+          <img src="Images/Tung.png" alt="profile image" class="profile-img">
+          <h1>Lê Xuân Tùng</h1>
+          <p class="job-title">Sinh Viên IT</p>
+          <p class="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit vel totam obcaecati officia dolore fugit consectetur illum doloribus, sunt amet voluptatem recusandae. Distinctio repellendus beatae illum sapiente repudiandae exercitationem?
+          </p>
+          <a href="" class="btn">View</a>
+          <ul class="social-media">
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="Images/Hung.jpg" alt="profile image" class="profile-img">
+          <h1>Cấn Duy Hưng</h1>
+          <p class="job-title">Sinh Viên IT</p>
+          <p class="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit vel totam obcaecati officia dolore fugit consectetur illum doloribus, sunt amet voluptatem recusandae. Distinctio repellendus beatae illum sapiente repudiandae exercitationem?
+          </p>
+          <a href="" class="btn">View</a>
+          <ul class="social-media">
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+          </ul>
+        </div>
     </div>
   </div>
 </section>
