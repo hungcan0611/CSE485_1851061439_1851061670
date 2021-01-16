@@ -1,6 +1,6 @@
 <?php
     include("config.php");
-    include("header.php");
+    include("sidebar_header.php");
     $result = mysqli_query($conn,"SELECT * FROM services");
     if(mysqli_num_rows($result) > 0){
         $serv = mysqli_fetch_all($result);
@@ -33,3 +33,6 @@
         </div>
     </form>
 </div>
+<?php
+    include("footer.php");
+?>
