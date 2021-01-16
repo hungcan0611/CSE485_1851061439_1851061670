@@ -19,8 +19,12 @@
       </div>
       <div class="col-md-4 footer-box">
         <p><b>Đăng ký để nhận tin mới nhất</b></p>
-        <input type="email" class="form-control" placeholder="Email của bạn">
-        <button type="button" class="btn btn-primary">Đăng ký</button>
+        
+        <form action="Admin/contact.php" method="get">
+          <input type="email" class="form-control" placeholder="Email của bạn" name="email">
+          <button type="submit" class="btn btn-primary" name="submit">Đăng ký</button>
+        </form>
+        
       </div>
     </div>
   </div>

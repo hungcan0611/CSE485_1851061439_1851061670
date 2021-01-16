@@ -22,7 +22,7 @@
             <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             <a href="#"><i class="fas fa-cog"></i><span>Components</span></a>
             <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
-            <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+            <a href="services.php"><i class="fas fa-th"></i><span>Add service</span></a>
             <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
             <a href="#"><i class="fas fa-sliders-h"></i><span>Setting</span></a>
         </div>

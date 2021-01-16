@@ -3,4 +3,5 @@
     if(!$conn){
         echo "Connection failed!";
     }
+    mysqli_set_charset($conn,'UTF8');
 ?>
