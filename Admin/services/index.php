@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['username'])){
-        include("../config.php");
+        require "../config.php";
         include("../sidebar_header.php");
         $result = mysqli_query($conn,"SELECT * FROM services");
         if(mysqli_num_rows($result) > 0){
@@ -25,8 +25,8 @@
         <tr>
             <td><?php echo $s[1]?></td>
             <td><?php echo $s[2]?></td>
-            <td><?php echo $s[3]?></td>
-            <th><a href="update_services.php?id=<?php echo $s[0];?>"><i class="far fa-edit"></i></a></th>
+            <td><img src="../../<?php echo $s[3]?>" style="width: 100px; height: 100px-->"></td>
+            <th><a href="edit_services.php?id=<?php echo $s[0];?>"><i class="far fa-edit"></i></a></th>
             <th><a href="delete_services.php?id=<?php echo $s[0];?>"><i class="far fa-trash-alt"></i></a></th>
         </tr>
         <?php } ?>

@@ -162,7 +162,7 @@
     padding: 15px;
     background: #ebeef8;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     transition: 0.1s;
 }
 #check:checked ~ .main-container{
@@ -200,9 +200,6 @@ label #sidebar_btn:hover{
     .main-container{
         margin-left: 60px;
     }
-}
-#admin .main-container{
-
 }
 
 /* ------------------- Login ------------------- */

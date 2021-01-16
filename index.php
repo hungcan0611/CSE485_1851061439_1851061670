@@ -104,11 +104,10 @@ include("NavBarSection.php");
             </div>
           </div>
           <?php } ?>
-          
-          
         <div class="swiper-pagination"></div>
       </div>
   </div>
+  <a href="">Leave comment here</a>
 </section>
 
 <!--<section id="social-media">
