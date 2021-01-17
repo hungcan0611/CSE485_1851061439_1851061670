@@ -25,9 +25,6 @@
             <div class="header">
                 <div class="header-menu">
                     <div class="title-admin">Ad<span>min</span></div>
-                    <!--<div class="sidebar-btn" id="sidebar-check" for="check">
-                        <i class="fas fa-bars"></i>
-                    </div>-->
                     <label for="check" class="sidebar-btn">
                         <i class="fas fa-bars" id="sidebar-btn"></i>
                     </label>
