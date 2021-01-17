@@ -10,19 +10,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">HOME</a>
+            <a class="nav-link" aria-current="page" href="#banner">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICES</a>
+            <a class="nav-link" href="#services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US</a>
+            <a class="nav-link" href="#about-us">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TESTIMONIALS</a>
+            <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="#team">TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">CONTACT</a>
           </li>
         </ul>
       </div>
