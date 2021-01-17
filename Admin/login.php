@@ -13,10 +13,10 @@
         $pass = validate($_POST['password']);
 
         if(empty($user)){
-            header("location: index.php?error=Username is requied");
+            header("location: index.php?error=Username is required");
             exit();
         }else if(empty($pass)){
-            header("location: index.php?error=Password is requied");
+            header("location: index.php?error=Password is required");
             exit();
         }else{
             $sql = "SELECT * FROM admin WHERE username = '$user' AND password = '$pass'";

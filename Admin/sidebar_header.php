@@ -51,14 +51,21 @@
                             <a href="../services/add_services.php"><i class="fas fa-folder-plus"></i><span>Add</span></a>
                         </div>
                     </li>
-                    <li class="item" id="message">
-                        <a href="#message" class="menu-btn">
-                            <i class="fas fa-concierge-bell"></i><span>Services<i class="fas fa-chevron-down drop-down"></i></span>
+                    <li class="item" id="timeline">
+                        <a href="#timeline" class="menu-btn">
+                            <i class="fas fa-clock"></i><span>Timeline<i class="fas fa-chevron-down drop-down"></i></span>
                         </a>
                         <div class="sub-menu">
-                            <a href="#"><i class="fas fa-folder-plus"></i><span>Add</span></a>
-                            <a href="#"><i class="fas fa-edit"></i><span>Edit</span></a>
-                            <a href="#"><i class="fas fa-folder-minus"></i><span>Delete</span></a>
+                            <a href="../timeline/index.php"><i class="fas fa-folder-plus"></i><span>Add</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="about-us">
+                        <a href="#about-us" class="menu-btn">
+                            <i class="fas fa-address-card"></i><span>About us<i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="../aboutus/index.php"><i class="fas fa-list"></i><span>List</span></a>
+                            <a href="../aboutus/add_about.php"><i class="fas fa-file-plus"></i><span>Add</span></a>
                         </div>
                     </li>
                 

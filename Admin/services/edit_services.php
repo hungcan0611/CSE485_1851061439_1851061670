@@ -41,10 +41,11 @@
         }
 ?>
 <div class="container">
+    <h1>Edit Services</h1>
     <?php
         if(!empty($statusMsg)){
     ?>
-        <p class="status <?php echo $status; ?>"><?php echo $statusMsg?></p>
+        <p class="status <?php echo $status; ?>" style="color: red;"><?php echo $statusMsg?></p>
     <?php
         }
     ?>
@@ -55,7 +56,6 @@
         </div>
         <div class="form-group">
             <label>Detail</label>
-            <!--<input type="text" class="form-control" name="detail" >-->
             <textarea name="detail" rows="4" cols="100"><?php echo $detail?></textarea>
         </div>
         <div class="form-group">
@@ -63,7 +63,7 @@
             <input type="file" name="img" value="<?php echo $img?>">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary" name="update">Cập nhật</button>
+            <button type="submit" class="btn btn-primary" name="update">Update</button>
         </div>
     </form>
 </div>

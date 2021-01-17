@@ -34,10 +34,11 @@
         }
 ?>
 <div class="container">
+    <h1>Add Services</h1>
     <?php
         if(!empty($statusMsg)){
     ?>
-        <p class="status <?php echo $status; ?>"><?php echo $statusMsg?></p>
+        <p class="status <?php echo $status; ?>" style="color: red;"><?php echo $statusMsg?></p>
     <?php
         }
     ?>

@@ -107,7 +107,7 @@ include("NavBarSection.php");
         <div class="swiper-pagination"></div>
       </div>
   </div>
-  <a href="add_cmt.php">Leave comment here</a>
+  <button onclick="location.href='add_cmt.php'" class="comment">Leave comment here</button>
 </section>
 
 

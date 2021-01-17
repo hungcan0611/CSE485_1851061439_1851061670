@@ -1,4 +1,7 @@
 /*---------- Admin ---------------*/
+h1{
+    color: #B600B7;
+}
 #admin *{
     list-style: none;
     text-decoration: none;

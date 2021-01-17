@@ -3,9 +3,9 @@
     if(isset($_SESSION['username'])){
         require "../config.php";
         include("../sidebar_header.php");
-        $result = mysqli_query($conn,"SELECT * FROM services");
+        $result = mysqli_query($conn,"SELECT * FROM about_us");
         if(mysqli_num_rows($result) > 0){
-            $serv = mysqli_fetch_all($result);
+            $about = mysqli_fetch_all($result);
         }
     
     
@@ -14,26 +14,24 @@
 <table class="table" position="relative">
     <thead>
         <tr>
-            <th>Name Of Service</th>
-            <th>Detail</th>
-            <th>Image</th>
+            <th>ID</th>
+            <th>About us</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
     </thead>
     <tbody>
-        <?php foreach($serv as $s){?>
+        <?php foreach($about as $au){?>
         <tr>
-            <td><?php echo $s[1]?></td>
-            <td><?php echo $s[2]?></td>
-            <td><img src="../../<?php echo $s[3]?>" style="width: 100px; height: 100px-->"></td>
-            <th><a href="edit_services.php?id=<?php echo $s[0];?>"><i class="far fa-edit"></i></a></th>
-            <th><a href="delete_services.php?id=<?php echo $s[0];?>"><i class="far fa-trash-alt"></i></a></th>
+            <td><?php echo $au[0]?></td>
+            <td><?php echo $au[1]?></td>
+            <th><a href="edit_about.php?id=<?php echo $s[0];?>"><i class="far fa-edit"></i></a></th>
+            <th><a href="delete_about.php?id=<?php echo $s[0];?>"><i class="far fa-trash-alt"></i></a></th>
         </tr>
         <?php } ?>
     </tbody>
 </table>
-<form method="POST" action="add_services.php">
+<form method="POST" action="add_about.php">
     <button type="submit" class="btn btn-primary" style="float: right; margin-right: 30px">Add</button>
 </form>
 <?php
