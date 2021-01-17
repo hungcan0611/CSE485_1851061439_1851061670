@@ -10,8 +10,11 @@
     }
     
 ?>
-
+<link rel="stylesheet" href="CSS/View.css">
 <body style="background: linear-gradient(to right, #a517ba, #5f1782);  center center; background-size:cover">
+  <section>
+    
+  </section>
   <div class="container ">
     <div id="box">
     <div class="row">
@@ -23,13 +26,12 @@
       <div class="row">
         <div class="col-lg-4">
         <?php foreach ($info_H as $i){ ?>
-          <img src="<?php echo $i[8] ?>" style= "width: 40px; height: 40px;">
+          <img src="<?php echo $i[8] ?>" class="">
           <p><?php echo $i[4]  ?></p>
         </div>
         <div class="col-lg-8">
           <h2>information</h2>
           <ul class="list">
-            
             <li>
               <p>Name:
                 <?php echo $i[1]  ?>
