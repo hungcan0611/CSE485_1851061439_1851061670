@@ -8,12 +8,12 @@ include("NavBarSection.php");
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <p class="promo-title">LOLI FOR PADDING, NOT LEWDING</p>
+          <p class="promo-title">Nếu tôi là số 2, không ai dám nhận số 1</p>
           <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores necessitatibus id quos dolores aliquid neque maiores excepturi quaerat adipisci! In impedit fugit perferendis quidem maxime reiciendis tempora quibusdam, id rem!</P>
-          <a href="#"><img src="Images/Tung.jpg" class="play-btn">Porn free here</a>
+          <!-- <a href="#"><img src="Images/Tung.jpg" class="play-btn">Porn free here</a> -->
         </div>
         <div class="col-md-6">
-          <img src="Images/Tung_chandung.jpg" class= "Tung-img">
+          <img src="Images/background.png" class= "background-img">
         </div>
       </div>
     </div>
